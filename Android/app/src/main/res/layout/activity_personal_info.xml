@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonalInfo"
+    android:background="@color/baby_blue">
+
+
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="417dp"
+        android:layout_height="229dp"
+        android:background="@drawable/chenar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/myImage"
+        android:layout_width="174dp"
+        android:layout_height="122dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:srcCompat="@drawable/man"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="176dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/berkshire"
+        android:text="@string/your_profile"
+        android:textColor="@color/blue_inchis"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/patient_code"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myImage" />
+
+    <TextView
+        android:id="@+id/tvCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:text=""
+        android:textColor="@color/red"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/myImage" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        app:layout_constraintBottom_toTopOf="@+id/view3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.51">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.611">
+
+            <EditText
+                android:id="@+id/lastName"
+                android:layout_width="361dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="@string/last_name"
+                android:inputType="textPersonName"
+                android:textColor="@color/royal_blue"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/firstName"
+                android:layout_width="361dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="24dp"
+                android:ems="10"
+                android:textColor="@color/royal_blue"
+                android:textStyle="bold"
+                android:hint="@string/first_name"
+                android:enabled="false"
+                android:inputType="textPersonName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lastName"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/nationality"
+                android:layout_width="174dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="24dp"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="none"
+                android:hint="@string/nationality"
+                android:textColor="@color/royal_blue"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/firstName"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/CNP"
+                android:layout_width="182dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="4dp"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="none"
+                android:hint="6010915348623"
+                android:textColor="@color/royal_blue"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@+id/nationality"
+                app:layout_constraintTop_toBottomOf="@+id/firstName"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/dateBirth"
+                android:layout_width="174dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="24dp"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="none"
+                android:hint="@string/date_of_birth"
+                android:textStyle="bold"
+                android:textColor="@color/royal_blue"
+                android:textAlignment="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nationality"
+                tools:ignore="Autofill,TextFields" />
+
+            <EditText
+                android:id="@+id/gender"
+                android:layout_width="182dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="4dp"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="none"
+                android:hint="@string/gender"
+                android:textColor="@color/royal_blue"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@+id/dateBirth"
+                app:layout_constraintTop_toBottomOf="@+id/CNP"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/emailP"
+                android:layout_width="361dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="24dp"
+                android:ems="10"
+                android:hint="@string/e_mail_ET"
+                android:inputType="textEmailAddress"
+                android:textAlignment="center"
+                android:textColor="@color/royal_blue"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dateBirth"
+                tools:ignore="Autofill,TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/phoneNumber"
+                android:layout_width="361dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="24dp"
+                android:ems="10"
+                android:hint="@string/phone_number"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textColor="@color/royal_blue"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/emailP"
+                tools:ignore="Autofill,TextFields,TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="361dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="24dp"
+                android:ems="10"
+                android:hint="@string/address"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/royal_blue"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/phoneNumber"
+                tools:ignore="Autofill,TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="174dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="24dp"
+                android:ems="10"
+                android:textColor="@color/royal_blue"
+                android:textStyle="bold"
+                android:hint="@string/city"
+                android:textAlignment="center"
+                android:inputType="textPersonName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/address"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/country"
+                android:layout_width="182dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="4dp"
+                android:ems="10"
+                android:hint="@string/country"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/royal_blue"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/city"
+                app:layout_constraintTop_toBottomOf="@+id/address"
+                tools:ignore="Autofill,TextContrastCheck" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="410dp"
+        android:layout_height="120dp"
+        android:background="@drawable/chenar2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="389dp"
+        android:layout_height="73dp"
+        android:layout_marginBottom="28dp"
+        android:text="\t❕The following data can\'t be changed❕\n \t\t\tLast name, First Name, Nationality, CNP, \n\t\t\tDate of Birth and Gender."
+        android:textColor="@color/blue_inchis"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.727"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

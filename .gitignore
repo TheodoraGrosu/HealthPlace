@@ -1,0 +1,12 @@
+# Android Studio
+.idea/
+*.iml
+build/
+.gradle/
+local.properties
+
+# Spring
+target/
+*.log
+*.class
+.DS_Store

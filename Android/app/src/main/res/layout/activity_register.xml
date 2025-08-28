@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+    android:background="@color/grey">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="219dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/create_account"
+        android:textAlignment="center"
+        android:textColor="@color/royal_blue"
+        android:textColorHint="@color/purple_700"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="327dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="@string/last_name_register"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/royal_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/first_name"
+        tools:ignore="Autofill" />
+
+
+    <EditText
+        android:id="@+id/first_name"
+        android:layout_width="327dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/first_name_register"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/royal_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="327dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="@string/e_mail_register"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/royal_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/phone_number"
+        android:layout_width="327dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="@string/phone_number_register"
+        android:inputType="phone"
+        android:textColorHint="@color/royal_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/repeat_password"
+        android:layout_width="327dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="@string/repeat_password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/royal_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        tools:ignore="Autofill" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="122dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/buton_login"
+        android:text="@string/sign_up_register"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/country" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="327dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="@string/password_register"
+        android:inputType="textPassword"
+        android:textColorHint="@color/royal_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone_number"
+        tools:ignore="Autofill" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="412dp"
+        android:layout_height="162dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/create"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <EditText
+        android:id="@+id/nationality"
+        android:layout_width="163.5dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="42dp"
+        android:ems="10"
+        android:hint="@string/nationality_register"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/royal_blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repeat_password"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/CNP"
+        android:layout_width="163.5dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        android:ems="10"
+        android:hint="@string/cnp_regoster"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/royal_blue"
+
+        app:layout_constraintStart_toEndOf="@+id/nationality"
+        app:layout_constraintTop_toBottomOf="@+id/repeat_password"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/dateBirth"
+        android:layout_width="163.5dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="42dp"
+        android:ems="10"
+        android:hint="@string/date_of_birth_register"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/royal_blue"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nationality"
+        tools:ignore="Autofill,TextFields" />
+
+    <EditText
+        android:id="@+id/gender"
+        android:layout_width="163.5dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        android:ems="10"
+        android:hint="@string/gender_register"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/royal_blue"
+        app:layout_constraintStart_toEndOf="@+id/dateBirth"
+        app:layout_constraintTop_toBottomOf="@+id/CNP"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="327dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="@string/address_register"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/royal_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateBirth"
+        tools:ignore="Autofill,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/city"
+        android:layout_width="163.5dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="42dp"
+        android:ems="10"
+        android:hint="@string/city_register"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/royal_blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/address"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/country"
+        android:layout_width="163.5dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        android:ems="10"
+        android:hint="@string/country_register"
+        android:textColorHint="@color/royal_blue"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/city"
+        app:layout_constraintTop_toBottomOf="@+id/address"
+        tools:ignore="Autofill" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

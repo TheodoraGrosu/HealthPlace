@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    android:background="@drawable/pic12"
+    >
+
+    <TextView
+        android:id="@+id/tv_cost_consultation2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="184dp"
+        android:labelFor="@id/cost_consultation"
+        android:text="@string/logout"
+        android:textColor="@color/teal_700"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logout"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/logout"
+        android:layout_width="108dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/button_circle"
+        android:padding="20dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_question"
+        app:srcCompat="@drawable/logout"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck,ImageContrastCheck" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="408dp"
+        android:layout_height="93dp"
+        android:background="@color/fundal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="163dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/welcome_patient"
+            android:textColor="@color/royal_blue"
+            android:textSize="32sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.173"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/parisienne"
+            android:text=""
+            android:textColor="@color/rose"
+            android:textSize="42sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageButton
+        android:id="@+id/personal_info"
+        android:layout_width="108dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_circle"
+        android:padding="20dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/persinfo"
+        tools:ignore="ContentDescription,DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:id="@+id/tvPersInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:labelFor="@id/personal_info"
+        android:text="@string/personal_information"
+        android:textColor="@color/teal_700"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/personal_info"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/medical_history"
+        android:layout_width="108dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_circle"
+        android:padding="20dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.861"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/medicalhist"
+        tools:ignore="ContentDescription,DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:id="@+id/tbMedicalHist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="56dp"
+        android:text="@string/medical_history"
+        android:textColor="@color/teal_700"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/medical_history"
+        android:labelFor="@id/medical_history"/>
+
+    <ImageButton
+        android:id="@+id/appointment_details"
+        android:layout_width="108dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_circle"
+        android:padding="20dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPersInfo"
+        app:srcCompat="@drawable/medicalappointment"
+        tools:ignore="ContentDescription,ImageContrastCheck,DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:id="@+id/tv_appointment_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="232dp"
+        android:labelFor="@id/appointment_details"
+        android:text="@string/medical_appointment_n_t_t_t_t_t_tdetails"
+        android:textColor="@color/teal_700"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appointment_details" />
+
+    <ImageButton
+        android:id="@+id/make_appointment"
+        android:layout_width="108dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_circle"
+        android:padding="20dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_appointment_details"
+        app:srcCompat="@drawable/makemedicalappointment"
+        tools:ignore="ContentDescription,DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:id="@+id/tv_make_appointment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="228dp"
+        android:labelFor="@id/make_appointment"
+        android:text="@string/t_t_t_tmake_online_nmedical_appointments"
+        android:textColor="@color/teal_700"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/make_appointment"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/question"
+        android:layout_width="108dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/button_circle"
+        android:padding="20dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.861"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cost_consultation"
+        app:srcCompat="@drawable/question"
+        tools:ignore="ContentDescription,DuplicateSpeakableTextCheck,ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/tv_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="52dp"
+        android:labelFor="@id/question"
+        android:text="@string/ask_a_question"
+        android:textColor="@color/teal_700"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/cost_consultation"
+        android:layout_width="108dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_circle"
+        android:padding="20dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.818"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tbMedicalHist"
+        app:srcCompat="@drawable/cost"
+        tools:ignore="ContentDescription,DuplicateSpeakableTextCheck,ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/tv_cost_consultation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="60dp"
+        android:labelFor="@id/cost_consultation"
+        android:text="@string/price_of_medical_n_consultation"
+        android:textColor="@color/teal_700"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cost_consultation" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
